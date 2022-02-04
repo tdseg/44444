@@ -9,41 +9,6 @@ cat << EOF > /etc/xray/config.json
     "inbounds": 
     [
         {
-      "port": $PORT,
-			"protocol": "vmess",
-            "settings": {
-			"clients": [
-			{
-			"id": "$AUUID"
-			}
-			]
-			},
-            "streamSettings": {
-			"network": "ws",
-			"wsSettings": {
-			"path": "/$AUUID-vmess"
-			}
-			}
-        },
-        {
-             "port": $PORT,
-			"protocol": "vless",
-            "settings": {
-			"clients": [
-			{
-			"id": "$AUUID"
-			}
-			],
-			"decryption": "none"
-			},
-            "streamSettings": {
-			"network": "ws",
-			"wsSettings": {
-			"path": "/$AUUID-vless"
-			}
-			}
-        },
-        {
                 "port": $PORT,
 			"protocol": "trojan",
             "settings": {
@@ -56,7 +21,7 @@ cat << EOF > /etc/xray/config.json
             "streamSettings": {
 			"network": "ws",
 			"wsSettings": {
-			"path": "/$AUUID-trojan"
+			"path": "/trojan"
 			}
 			}
         }
