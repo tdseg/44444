@@ -11,7 +11,7 @@
 
 ## X 默认配置
   ```bash
-    * 协议：Vless
+    * 协议：Vless、vmess、trojan
     * 地址：自选 IP
     * 端口：443
     * 默认UUID：ad806487-2d26-4636-98b6-ab85cc8521f7
@@ -19,7 +19,7 @@
     * 传输协议：ws
     * 伪装类型：none
     * 伪装域名：xxx.workers.dev (Cloudflare Workers 反代地址)
-    * 路径：/
+    * 路径：/UUID-Vless、vmess、trojan
     * 底层传输安全：tls
     * 跳过证书验证：false
     * SNI：xxx.workers.dev (Cloudflare Workers 反代地址)
